@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zentro Media - Jasa Website & SEO Profesional</title>
+    <meta name="description" content="Jasa Pembuatan Website dan SEO Profesional Terpercaya.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        emerald: {
+                            800: '#065f46',
+                            900: '#064e3b',
+                            950: '#022c22', // Royal Emerald Dark
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b', // Royal Gold
+                            600: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* ROYAL EMERALD BACKGROUND */
+        body {
+            background-color: #022c22;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(153,95%,15%,1) 0, transparent 50%), 
+                radial-gradient(at 100% 100%, hsla(44,95%,25%,1) 0, transparent 50%);
+            background-attachment: fixed;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        /* Glass Panel (White Glass) - High Contrast for Reading */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        /* Dark Glass for Footer/Cards */
+        .glass-dark {
+            background: rgba(2, 44, 34, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Gold Gradient Text */
+        .text-gradient-gold {
+            background: linear-gradient(to right, #f59e0b, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: shine 3s linear infinite;
+        }
+
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        /* Hover Effects */
+        .hover-lift:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- NAVBAR (Optional, simple logo) -->
+    <nav class="fixed w-full z-50 glass-dark border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-layer-group text-3xl text-gold-500"></i>
+                    <span class="font-extrabold text-2xl tracking-tight text-white">Zentro<span class="text-gold-500">Media</span></span>
+                </div>
+                <a href="https://wa.me/6281235124994" class="bg-gold-500 hover:bg-gold-600 text-emerald-950 font-bold py-2 px-6 rounded-full transition shadow-lg shadow-gold-500/20">
+                    Hubungi Kami
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="pt-32 pb-20 px-4 text-center relative overflow-hidden">
+        <!-- Decorative Glow -->
+        <div class="absolute top-20 left-1/2 -translate-x-1/2 w-96 h-96 bg-emerald-500/20 rounded-full blur-[100px] -z-10"></div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Wujudkan Website Impian & <br>
+                <span class="text-gradient-gold">Dominasi Halaman 1 Google</span>
+            </h1>
+            <h2 class="text-lg md:text-xl text-emerald-100/80 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
+                Zentro Media hadir sebagai partner digital terbaik Anda. Kami menghadirkan solusi pembuatan website profesional dan strategi SEO yang terbukti meningkatkan traffic.
+            </h2>
+            <a href="https://wa.me/6281235124994" class="inline-flex items-center gap-3 bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-emerald-950 font-bold py-4 px-10 rounded-full transition transform hover:scale-105 shadow-xl shadow-gold-500/20 text-lg">
+                <i class="fa-brands fa-whatsapp text-2xl"></i> Hubungi Kami Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- LAYANAN KAMI -->
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-gold-500 font-bold uppercase tracking-widest text-sm">Layanan Kami</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Solusi Digital Terlengkap untuk Bisnis Anda</h2>
+                <p class="text-emerald-200 max-w-2xl mx-auto">Kami menyediakan layanan digital yang komprehensif untuk membantu bisnis Anda berkembang di era digital.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Jasa Website -->
+                <div class="glass-panel p-8 md:p-10 rounded-3xl hover-lift group border-t-4 border-emerald-500">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-desktop text-3xl text-emerald-800"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-emerald-950 mb-4">Jasa Pembuatan Website</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">Website profesional dengan desain modern, responsif, dan dioptimalkan untuk konversi. Cocok untuk berbagai kebutuhan bisnis Anda.</p>
+                    <ul class="space-y-3 mb-8 text-slate-700">
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-gold-500 mr-3"></i> Desain Custom & Profesional</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-gold-500 mr-3"></i> Mobile Responsive</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-gold-500 mr-3"></i> Loading Super Cepat</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-gold-500 mr-3"></i> SEO Friendly Structure</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-gold-500 mr-3"></i> SSL Certificate Gratis</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-gold-500 mr-3"></i> Support 7 Days</li>
+                    </ul>
+                    <a href="https://wa.me/6281235124994" class="block w-full text-center bg-emerald-950 text-white font-bold py-3 rounded-xl hover:bg-emerald-800 transition">Konsultasi Sekarang <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                </div>
+
+                <!-- Jasa SEO -->
+                <div class="glass-panel p-8 md:p-10 rounded-3xl hover-lift group border-t-4 border-gold-500">
+                    <div class="w-16 h-16 bg-gold-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-chart-line text-3xl text-gold-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-emerald-950 mb-4">Jasa SEO Profesional</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">Tingkatkan visibilitas website Anda di mesin pencari Google dan dapatkan traffic organik yang berkualitas dengan strategi SEO terbaik.</p>
+                    <ul class="space-y-3 mb-8 text-slate-700">
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-600 mr-3"></i> Audit SEO Mendalam</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-600 mr-3"></i> Riset Keyword Strategis</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-600 mr-3"></i> On-Page Optimization</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-600 mr-3"></i> Off-Page & Link Building</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-600 mr-3"></i> Content Marketing</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-600 mr-3"></i> Report Bulanan Detail</li>
+                    </ul>
+                    <a href="https://wa.me/6281235124994" class="block w-full text-center bg-gold-500 text-emerald-950 font-bold py-3 rounded-xl hover:bg-gold-400 transition">Konsultasi Sekarang <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BUKTI SCREENSHOT SEO (REAL RESULTS) -->
+    <section class="py-20 px-4 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-b from-emerald-950/0 via-emerald-900/50 to-emerald-950/0 pointer-events-none"></div>
+        <div class="absolute right-0 top-0 w-96 h-96 bg-gold-500/10 rounded-full blur-[100px] -z-10"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-block px-4 py-1 rounded-full bg-emerald-800/50 border border-emerald-500/30 mb-4">
+                    <span class="text-gold-400 font-bold uppercase text-xs tracking-widest"><i class="fa-solid fa-images mr-2"></i>Real Data</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Bukti Ranking Google <span class="text-gradient-gold">Zentro Media</span></h2>
+                <p class="text-emerald-200">Screenshot asli dari laporan monitoring ranking klien kami. Posisi #1 bukan sekadar impian.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- BUKTI 1: MBP Chemical (Industri) -->
+                <div class="glass-panel p-4 rounded-3xl group hover:border-gold-500/50 transition duration-500">
+                    <div class="relative overflow-hidden rounded-2xl border border-slate-200 aspect-[4/3] bg-white">
+                        <!-- GANTI 'bukti1.jpg' DENGAN NAMA FILE GAMBAR PERTAMA BAPAK -->
+                        <img src="bukti1.jpg" alt="Ranking SEO MBP Chemical" class="w-full h-full object-contain object-top transition duration-700 group-hover:scale-105">
+                        
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-emerald-950 to-transparent p-6 pt-12">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <div class="text-gold-400 text-xs font-bold uppercase tracking-wider mb-1">Niche: Industri & Teknik</div>
+                                    <div class="text-white font-bold">Dominasi Keyword Teknis</div>
+                                </div>
+                                <div class="w-10 h-10 rounded-full bg-gold-500 text-emerald-950 flex items-center justify-center font-bold">#1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUKTI 2: MBP Chemical (Distributor) -->
+                <div class="glass-panel p-4 rounded-3xl group hover:border-gold-500/50 transition duration-500">
+                    <div class="relative overflow-hidden rounded-2xl border border-slate-200 aspect-[4/3] bg-white">
+                        <!-- GANTI 'bukti2.jpg' DENGAN NAMA FILE GAMBAR KEDUA BAPAK -->
+                        <img src="bukti2.jpg" alt="Ranking SEO Distributor" class="w-full h-full object-contain object-top transition duration-700 group-hover:scale-105">
+                        
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-emerald-950 to-transparent p-6 pt-12">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <div class="text-gold-400 text-xs font-bold uppercase tracking-wider mb-1">Keyword: Distributor</div>
+                                    <div class="text-white font-bold">Menang di Keyword Komersial</div>
+                                </div>
+                                <div class="w-10 h-10 rounded-full bg-gold-500 text-emerald-950 flex items-center justify-center font-bold">#1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUKTI 3: Saudagar Nusantara (Jasa) -->
+                <div class="glass-panel p-4 rounded-3xl group hover:border-gold-500/50 transition duration-500">
+                    <div class="relative overflow-hidden rounded-2xl border border-slate-200 aspect-[4/3] bg-white">
+                        <!-- GANTI 'bukti3.jpg' DENGAN NAMA FILE GAMBAR KETIGA BAPAK -->
+                        <img src="bukti3.jpg" alt="Ranking SEO Saudagar Nusantara" class="w-full h-full object-contain object-top transition duration-700 group-hover:scale-105">
+                        
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-emerald-950 to-transparent p-6 pt-12">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <div class="text-gold-400 text-xs font-bold uppercase tracking-wider mb-1">Niche: Jasa Konstruksi</div>
+                                    <div class="text-white font-bold">Multiple Page 1 Rankings</div>
+                                </div>
+                                <div class="w-10 h-10 rounded-full bg-gold-500 text-emerald-950 flex items-center justify-center font-bold">#1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUKTI 4: Fimis (Edukasi/Pesantren) -->
+                <div class="glass-panel p-4 rounded-3xl group hover:border-gold-500/50 transition duration-500">
+                    <div class="relative overflow-hidden rounded-2xl border border-slate-200 aspect-[4/3] bg-white">
+                        <!-- GANTI 'bukti4.jpg' DENGAN NAMA FILE GAMBAR KEEMPAT BAPAK -->
+                        <img src="bukti4.jpg" alt="Ranking SEO Pesantren" class="w-full h-full object-contain object-top transition duration-700 group-hover:scale-105">
+                        
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-emerald-950 to-transparent p-6 pt-12">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <div class="text-gold-400 text-xs font-bold uppercase tracking-wider mb-1">Niche: Edukasi & Muslimah</div>
+                                    <div class="text-white font-bold">Top 3 untuk Keyword Panjang</div>
+                                </div>
+                                <div class="w-10 h-10 rounded-full bg-gold-500 text-emerald-950 flex items-center justify-center font-bold">#1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA Button -->
+            <div class="text-center mt-12">
+                <a href="https://wa.me/6281235124994?text=Halo%20Zentro%20Media,%20saya%20ingin%20website%20saya%20masuk%20Halaman%201%20Google" class="inline-flex items-center gap-3 bg-emerald-900 border border-emerald-500 hover:bg-gold-500 hover:text-emerald-950 hover:border-gold-500 text-white font-bold py-4 px-8 rounded-full transition shadow-xl group">
+                    <i class="fa-solid fa-chart-line group-hover:animate-bounce"></i> Saya Ingin Website Saya di Halaman 1
+                </a>
+            </div>
+        </div>
+    </section>             
+
+    <!-- PAKET HARGA -->
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-block px-4 py-1 rounded-full bg-white/10 backdrop-blur border border-white/20 mb-4">
+                    <span class="text-gold-400 font-bold uppercase text-xs tracking-widest">Paket Harga</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Pilih Paket Terbaik untuk Anda</h2>
+                <p class="text-emerald-200">Investasi terbaik untuk pertumbuhan bisnis digital Anda</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                
+                <!-- PAKET 1: STARTER -->
+                <div class="glass-panel p-8 rounded-3xl relative hover:border-gold-500 transition">
+                    <h3 class="text-emerald-950 font-bold text-xl mb-2">Starter</h3>
+                    <div class="text-3xl font-extrabold text-emerald-900 mb-6">1 Jt<span class="text-sm font-normal text-slate-500">/project</span></div>
+                    <ul class="space-y-4 mb-8 text-slate-700 text-sm">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 w-6"></i> Landing Page</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 w-6"></i> Desain Responsif</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 w-6"></i> Domain .com Gratis</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 w-6"></i> Hosting 1 Tahun</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 w-6"></i> SSL Certificate</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 w-6"></i> Basic SEO Setup</li>
+                    </ul>
+                    <a href="https://wa.me/6281235124994?text=Halo%20Zentro%20Media,%20saya%20tertarik%20paket%20Starter" class="block w-full text-center border-2 border-emerald-900 text-emerald-900 font-bold py-3 rounded-xl hover:bg-emerald-900 hover:text-white transition">Pilih Paket</a>
+                </div>
+
+                <!-- PAKET 2: BUSINESS (POPULER) -->
+                <div class="glass-panel p-8 rounded-3xl relative transform md:-translate-y-4 border-2 border-gold-500 shadow-2xl shadow-gold-500/20 z-10">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gold-500 text-emerald-950 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide shadow-lg">
+                        Paling Populer
+                    </div>
+                    <h3 class="text-emerald-950 font-bold text-xl mb-2">Business</h3>
+                    <div class="text-4xl font-extrabold text-emerald-900 mb-6">2.5 Jt<span class="text-sm font-normal text-slate-500">/project</span></div>
+                    <ul class="space-y-4 mb-8 text-slate-700 text-sm font-medium">
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-gold-500 w-6"></i> Website 8 Halaman</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-gold-500 w-6"></i> Desain Premium</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-gold-500 w-6"></i> Domain .com Gratis</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-gold-500 w-6"></i> Hosting 1 Tahun</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-gold-500 w-6"></i> SSL + CDN</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-gold-500 w-6"></i> SEO On-Page Lengkap</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-gold-500 w-6"></i> Google Search Console</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-gold-500 w-6"></i> Google Analytics</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-gold-500 w-6"></i> Support 1 Tahun</li>
+                    </ul>
+                    <a href="https://wa.me/6281235124994?text=Halo%20Zentro%20Media,%20saya%20tertarik%20paket%20Business" class="block w-full text-center bg-gold-500 text-emerald-950 font-bold py-4 rounded-xl hover:bg-gold-400 transition shadow-lg">Pilih Paket</a>
+                </div>
+
+                <!-- PAKET 3: ENTERPRISE -->
+                <div class="glass-panel p-8 rounded-3xl relative hover:border-gold-500 transition">
+                    <h3 class="text-emerald-950 font-bold text-xl mb-2">Enterprise</h3>
+                    <div class="text-3xl font-extrabold text-emerald-900 mb-6">8 Jt<span class="text-sm font-normal text-slate-500">/project</span></div>
+                    <ul class="space-y-4 mb-8 text-slate-700 text-sm">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 w-6"></i> Website Unlimited Page</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 w-6"></i> Website E-commerce</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 w-6"></i> Domain Premium</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 w-6"></i> Full SEO Package</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 w-6"></i> E-Commerce Ready</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 w-6"></i> Support 1 Tahun</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-emerald-600 w-6"></i> Priority Support</li>
+                    </ul>
+                    <a href="https://wa.me/6281235124994?text=Halo%20Zentro%20Media,%20saya%20tertarik%20paket%20Enterprise" class="block w-full text-center border-2 border-emerald-900 text-emerald-900 font-bold py-3 rounded-xl hover:bg-emerald-900 hover:text-white transition">Pilih Paket</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="py-20 px-4 bg-emerald-950/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Apa Kata Klien Kami</h2>
+                <p class="text-emerald-200">Kepuasan klien adalah bukti nyata kualitas layanan kami</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimoni 1 -->
+                <div class="glass-dark p-8 rounded-2xl border border-white/5 relative">
+                    <div class="text-gold-500 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 italic mb-6 leading-relaxed">"Zentro Media sangat profesional! Website kami sekarang sudah di halaman 1 Google dan traffic naik drastis. Sangat recommended!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gold-500 flex items-center justify-center font-bold text-emerald-950">IA</div>
+                        <div>
+                            <div class="font-bold text-white">Irawan Ardianto</div>
+                            <div class="text-xs text-gold-400">Owner MBP Chemical</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimoni 2 -->
+                <div class="glass-dark p-8 rounded-2xl border border-white/5 relative bg-white/5">
+                    <div class="text-gold-500 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 italic mb-6 leading-relaxed">"Kami memilih Zentro karena rekomendasi dan pengalaman yang terbukti! Pendekatan yang bagus, Fokus dan realistis. Kami merasa aman & nyaman bekerja sama."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center font-bold text-white">IB</div>
+                        <div>
+                            <div class="font-bold text-white">Indrayoto BS. SH</div>
+                            <div class="text-xs text-gold-400">Lawyer Peradi</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimoni 3 -->
+                <div class="glass-dark p-8 rounded-2xl border border-white/5 relative">
+                    <div class="text-gold-500 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 italic mb-6 leading-relaxed">"SEO yang dikerjakan Zentro Media sangat efektif. Leads dari Google meningkat. Worth every penny!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gold-500 flex items-center justify-center font-bold text-emerald-950">RR</div>
+                        <div>
+                            <div class="font-bold text-white">Rasyid Rayyan</div>
+                            <div class="text-xs text-gold-400">Owner Umroh Kami</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black/40 border-t border-emerald-900 pt-16 pb-8 text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <!-- Kolom 1 -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="font-extrabold text-xl tracking-tight text-white">Zentro<span class="text-gold-500">Media</span></span>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed">Digital agency profesional yang fokus pada pembuatan website berkualitas dan strategi SEO yang efektif untuk mengembangkan bisnis Anda di era digital.</p>
+                </div>
+
+                <!-- Kolom 2 -->
+                <div>
+                    <h4 class="font-bold text-white uppercase mb-4 tracking-wider">Layanan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://wa.me/6281235124994" class="text-slate-400 hover:text-gold-500 transition">Pembuatan Website</a></li>
+                        <li><a href="https://wa.me/6281235124994" class="text-slate-400 hover:text-gold-500 transition">Jasa SEO</a></li>
+                        <li><a href="https://wa.me/6281235124994" class="text-slate-400 hover:text-gold-500 transition">Maintenance</a></li>
+                        <li><a href="https://wa.me/6281235124994" class="text-slate-400 hover:text-gold-500 transition">Digital Marketing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolom 3 -->
+                <div>
+                    <h4 class="font-bold text-white uppercase mb-4 tracking-wider">Kontak</h4>
+                    <ul class="space-y-3 text-slate-400">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-gold-500"></i> +62 812 3512 4994</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-gold-500"></i> info@zentromedia.com</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-map-marker-alt text-gold-500"></i> Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/5 pt-8 text-center text-slate-500 text-xs">
+                © 2026 Zentro Media. All Rights Reserved | Jasa Pembuatan Website & SEO Profesional
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
